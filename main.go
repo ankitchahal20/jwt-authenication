@@ -23,8 +23,8 @@ var (
 
 //struct User for parsing login credentials
 type User struct {
-	UserName string `json:"username"`
-	Password string `json:"password"`
+	U string `json:"u"`
+	P string `json:"p"`
 }
 
 // read the key files before starting http handlers

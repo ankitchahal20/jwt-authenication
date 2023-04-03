@@ -20,8 +20,8 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "Error in request body")
 		return
 	}
-	// validate user credentials
-	if user.UserName != "ankit" && user.Password != "chahal" {
+
+	if user.U != "ankit" && user.P != "chahal" {
 		w.WriteHeader(http.StatusForbidden)
 		fmt.Fprintln(w, "Wrong info")
 		return
